@@ -1,0 +1,55 @@
+/* Style the tab */
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+// top part
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    text-align: center;
+    height: 10%;
+}
+
+// bottom part
+.bottom {
+    height: 90%;
+    overflow: scroll;
+}
+
+/* Style the buttons inside the tab */
+.tabButton {
+    box-sizing: border-box;
+    display: block;
+    background-color: inherit;
+    color: #ffffff;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    // border-radius: 5px;
+    border-bottom: 5px solid transparent;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+.activeButton {
+    // background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: 5px solid rgba(255, 255, 255, 0.2);
+}
+/* Style the tab content */
+.tabContent {
+    float: left;
+    padding: 0px 12px;
+    width: 80%;
+    border-left: none;
+    height: 100%;
+}
